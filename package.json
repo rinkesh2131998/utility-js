@@ -1,42 +1,36 @@
 {
   "name": "utility-js",
   "version": "0.0.1",
-  "description": "Reusable utility functions for JavaScript/TypeScript projects",
-  "keywords": [
-    "util",
-    "utility",
-    "aop",
-    "typescript",
-    "node"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rinkesh2131998/utility-js"
-  },
-  "license": "ISC",
-  "author": "rinkesh",
-  "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "description": "Reusable utility functions for JavaScript/TypeScript",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "ts-node src/index.ts",
-    "build": "tsc",
-    "clean": "rm -rf dist",
-    "start": "node dist/index.js",
-    "prepare": "npm run build"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@types/node": "^20.11.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rinkesh2131998/utility-js"
   }
 }
