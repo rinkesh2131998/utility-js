@@ -1,0 +1,21 @@
+{
+  "name": "utility-js",
+  "version": "0.0.1",
+  "description": "random ",
+  "keywords": [
+    "util",
+    "utility",
+    "aop"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "y"
+  },
+  "license": "ISC",
+  "author": "rinkesh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
