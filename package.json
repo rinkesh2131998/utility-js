@@ -1,5 +1,5 @@
 {
-  "name": "utility-js",
+  "name": "@rinkesh/utility-js",
   "version": "0.1.1",
   "description": "Reusable utility functions for JavaScript/TypeScript",
   "main": "dist/index.js",
