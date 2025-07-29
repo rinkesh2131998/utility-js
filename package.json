@@ -1,6 +1,6 @@
 {
   "name": "utility-js",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Reusable utility functions for JavaScript/TypeScript",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
